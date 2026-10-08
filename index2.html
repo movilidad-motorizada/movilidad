@@ -30,29 +30,23 @@
       <select id="usuarioSelect">
         <option value="">Cargando paciente...</option>
       </select>
-      
-<li>
-      
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-          style="vertical-align: middle; margin-right: 6px;"
-        >
+
+      <li>
+
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+          style="vertical-align: middle; margin-right: 6px;">
           <path d="M12 12c2.7 0 4.5-2 4.5-4.5S14.7 3 12 3 
                    7.5 5 7.5 7.5 9.3 12 12 12zm0 2
                    c-3 0-9 1.5-9 4.5V21h18v-2.5
-                   c0-3-6-4.5-9-4.5z"/>
+                   c0-3-6-4.5-9-4.5z" />
         </svg>
         <span id="nombreUsuario"></span>
-      
-        
+
+
         <button id="cerrarSesionBtn" class="btn-logout">
           ⛔ Logout
         </button>
-    </li>
+      </li>
 
     </ul>
   </nav>
@@ -108,58 +102,58 @@
     <p>© 2026 Proyecto Movilidad Motorizada</p>
   </footer>
   <script src="js/script.js" type="module"></script>
-  
-<div id="modalTiempo" class="modal hidden">
+
+  <div id="modalTiempo" class="modal hidden">
     <div class="modal-content">
-        <span class="close">&times;</span>
-        <canvas id="tiempoChartModal"></canvas>
-        <div class="week-buttons" data-chart="tiempo">
+      <span class="close">&times;</span>
+      <canvas id="tiempoChartModal"></canvas>
+      <div class="week-buttons" data-chart="tiempo">
 
-          <button data-modal="0">1</button>
-          <button data-modal="1">2</button>
-          <button data-modal="2">3</button>
-          <button data-modal="3">4</button>
-          <button data-modal="4">5</button>
-          <button data-modal="5">6</button>
-          <button data-modal="6">7</button>
-          <button data-modal="7">8</button>
-          <button data-modal="8">9</button>
-          <button data-modal="9">10</button>
-          <button data-modal="10">11</button>
-          <button data-modal="11">12</button>
+        <button data-modal="0">1</button>
+        <button data-modal="1">2</button>
+        <button data-modal="2">3</button>
+        <button data-modal="3">4</button>
+        <button data-modal="4">5</button>
+        <button data-modal="5">6</button>
+        <button data-modal="6">7</button>
+        <button data-modal="7">8</button>
+        <button data-modal="8">9</button>
+        <button data-modal="9">10</button>
+        <button data-modal="10">11</button>
+        <button data-modal="11">12</button>
 
-        </div>
-        <div>
-          <button data-cerrar="0" id="cerrarModalTiempo" class="week-buttons">Cerrar</button>
-        </div>
+      </div>
+      <div>
+        <button data-cerrar="0" id="cerrarModalTiempo" class="week-buttons">Cerrar</button>
+      </div>
     </div>
-</div>
+  </div>
 
-<div id="modalSesiones" class="modal">
+  <div id="modalSesiones" class="modal">
     <div class="modal-content">
-        <span class="close">&times;</span>
-        <canvas id="sesionesChartModal"></canvas>
-        <div class="week-buttons" data-chart="sesiones">
+      <span class="close">&times;</span>
+      <canvas id="sesionesChartModal"></canvas>
+      <div class="week-buttons" data-chart="sesiones">
 
-          <button data-modal="0">1</button>
-          <button data-modal="1">2</button>
-          <button data-modal="2">3</button>
-          <button data-modal="3">4</button>
-          <button data-modal="4">5</button>
-          <button data-modal="5">6</button>
-          <button data-modal="6">7</button>
-          <button data-modal="7">8</button>
-          <button data-modal="8">9</button>
-          <button data-modal="9">10</button>
-          <button data-modal="10">11</button>
-          <button data-modal="11">12</button>
+        <button data-modal="0">1</button>
+        <button data-modal="1">2</button>
+        <button data-modal="2">3</button>
+        <button data-modal="3">4</button>
+        <button data-modal="4">5</button>
+        <button data-modal="5">6</button>
+        <button data-modal="6">7</button>
+        <button data-modal="7">8</button>
+        <button data-modal="8">9</button>
+        <button data-modal="9">10</button>
+        <button data-modal="10">11</button>
+        <button data-modal="11">12</button>
 
-        </div>
-        <div>
-          <button data-cerrar="0" id="cerrarModalSesiones" class="week-buttons">Cerrar</button>
-        </div>
+      </div>
+      <div>
+        <button data-cerrar="0" id="cerrarModalSesiones" class="week-buttons">Cerrar</button>
+      </div>
     </div>
-</div>
+  </div>
 
 </body>
 

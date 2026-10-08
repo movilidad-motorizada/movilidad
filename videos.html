@@ -53,16 +53,32 @@
 
 <!-- ✅ MENÚ -->
 <nav class="menu">
-  <ul>
-      <li><a href="horas.html">Inicio</a></li>
-      <li><a href="videos.html">Vídeos</a></li>
-      <li><a href="configuracion.html">Configuración</a></li>
-      <li><a href="#">Seleccionar Usuario</a></li>
+    <ul>
+      <li><a href="indexUsuario.html">Volver</a></li>
+      <li id="ocultar"><a href="#">Seleccionar paciente</a></li>
       <select id="usuarioSelect">
-        <option value="">Cargando usuarios...</option>
+        <option value="">Cargando paciente...</option>
       </select>
-  </ul>
-</nav>
+
+      <li>
+
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+          style="vertical-align: middle; margin-right: 6px;">
+          <path d="M12 12c2.7 0 4.5-2 4.5-4.5S14.7 3 12 3 
+                   7.5 5 7.5 7.5 9.3 12 12 12zm0 2
+                   c-3 0-9 1.5-9 4.5V21h18v-2.5
+                   c0-3-6-4.5-9-4.5z" />
+        </svg>
+        <span id="nombreUsuario"></span>
+
+
+        <button id="cerrarSesionBtn" class="btn-logout">
+          ⛔ Logout
+        </button>
+      </li>
+
+    </ul>
+  </nav>
 
 <!-- ✅ CONTENIDO PRINCIPAL -->
 <main>
