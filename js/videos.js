@@ -33,6 +33,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
+function formatearDuracion(segundos) {
+    const minutos = Math.floor(segundos / 60);
+    const segundosRestantes = Math.floor(segundos % 60);
+
+    return `${minutos}:${String(segundosRestantes).padStart(2, "0")}`;
+}
 // ID del usuario
 
 const usuarioId = localStorage.getItem("pacienteSeleccionado");
@@ -67,7 +73,7 @@ async function cargarVideos() {
             tarjeta.innerHTML = `
                 <h3>Vídeo ${video.id}</h3>
                 <p>Fecha: ${video.date}</p>
-                <p>Duración: ${video.duration} min</p>
+                <p>Duración: ${formatearDuracion(video.duration)} min</p>
 
                 <video controls width="400">
                     <source src="${video.url}" type="video/mp4">
